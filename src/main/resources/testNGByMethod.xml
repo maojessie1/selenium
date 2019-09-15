@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Suite" verbose="1" parallel="false" thread-count="1">
+    <test name ="test" preserve-order="true">
+        <classes>
+            <class name="java20190818.TestNGByStartBrowser">
+                <methods>
+                    <include name="test"/>
+                    <include name="test1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

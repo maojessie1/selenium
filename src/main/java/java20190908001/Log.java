@@ -1,0 +1,38 @@
+package java20190908001;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
+import java.io.File;
+
+public class Log {
+    private static Logger logger;
+    private static String filepath="src/main/resources/log4j.properties";
+    private static boolean flag = false;
+
+    private static synchronized void getPropertyFile(){
+        logger = Logger.getLogger("StartOne");
+        PropertyConfigurator.configure(new File(filepath).getAbsolutePath());
+        flag = true;
+    }
+
+    private static void getFlag(){
+        if (flag == false){
+            Log.getPropertyFile();
+        }
+    }
+
+    public static void logInfo(String message){
+        Log.getFlag();
+        logger.info(message);
+    }
+
+    public static void logError(String message){
+        Log.getFlag();
+        logError(message);
+    }
+    public static void logWarn(String message){
+        Log.getFlag();
+        logger.warn(message);
+    }
+}

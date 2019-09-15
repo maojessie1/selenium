@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--以class为基本点运行-->
+<suite name = "Suite" verbose = "1" parallel="false" thread-count="1">
+    <test name="Test1">
+        <classes>
+            <class name = "java20190818.TestNGByStartBrowser"/>
+        </classes>
+    </test>
+</suite>
