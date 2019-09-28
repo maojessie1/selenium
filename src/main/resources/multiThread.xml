@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name = "thread" parallel="classs" thread-count="3">
+    <!--parallel,级别是方法级别的， thread-count，表示2个线程。
+    methods级别：所有用例都可以在不同的线程下去执行, methods方式用的比较多
+    test级别：相同的test tag下的用例只能在同一个线程中去执行
+    classs级别（类不同，id不同）：相同的class tag下的用例只能在同一个线程中去执行
+    thread-count:代表了最大并发线程数
+    xml文件配置这种方式不能制定线程池，只有方法上才可以制定线程池
+    -->
+    <test name = "demo1">
+        <classes name="d1">
+            <class name="java20190925.MultiThreadOnXml" />
+        </classes>
+    </test>
+
+    <test name="demo2">
+        <classes name="d2">
+            <class name="java20190925.MultiThreadOnXml" />
+        </classes>
+    </test>
+
+    <!--<test name="demo3">-->
+        <!--<classes name="d3">-->
+            <!--<class name="java20190925.DependTest" />-->
+        <!--</classes>-->
+    <!--</test>-->
+</suite>
