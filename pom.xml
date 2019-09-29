@@ -87,9 +87,9 @@
         </dependency>
 
         <!--<dependency>-->
-            <!--<groupId>mysql</groupId>-->
-            <!--<artifactId>mysql-connector-TestNGReport.TestReport.java</artifactId>-->
-            <!--<version>8.0.13</version>-->
+        <!--<groupId>mysql</groupId>-->
+        <!--<artifactId>mysql-connector-TestNGReport.TestReport.java</artifactId>-->
+        <!--<version>8.0.13</version>-->
         <!--</dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
@@ -190,4 +190,3 @@
 
 
 </project>
-

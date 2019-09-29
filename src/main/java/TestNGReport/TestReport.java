@@ -1,6 +1,6 @@
 package TestNGReport;
 
-import org.junit.Assert;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -24,8 +24,8 @@ public class TestReport {
 
             @Test
             public void log(){
-                Reporter.log("这是我们自己写的日志");
-                throw new RuntimeException("这是我自己的运行时异常");
+                Reporter.log("???????????д?????");
+                throw new RuntimeException("??????????????????");
             }
         }
     }
